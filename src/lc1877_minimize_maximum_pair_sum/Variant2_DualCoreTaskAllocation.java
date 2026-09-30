@@ -1,6 +1,13 @@
 package lc1877_minimize_maximum_pair_sum;
 
 public class Variant2_DualCoreTaskAllocation {
+    /**
+     * LeetCode 1877 Variant 2: Dual-Core Processor Task Allocation
+     *
+     * Pattern: Counting Sort + Bilateral Two Pointers
+     * Time Complexity: O(N + M) where M = max(tasks)
+     * Space Complexity: O(M) for frequency array
+     */
     public static int minMaxThreadTime(int[] tasks, int max_skew) {
         int maxEL = Integer.MIN_VALUE;
         for (int t : tasks) {
